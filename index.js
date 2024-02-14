@@ -1,3 +1,3 @@
 const alertFun = () => {
-    setTimeout((document.alert("Hello from the script!")), 4000)
+    setTimeout((window.alert("Hello from the script!")), 4000)
 }
