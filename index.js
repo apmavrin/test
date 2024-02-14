@@ -1,3 +1,6 @@
-const alertFun = () => {
-    setTimeout((window.alert("Hello from the script!")), 4000)
-}
+(function prepareWebAssistant() {
+        // check requirements loaded - postpone if not
+        if (!document.getElementsByTagName('head')[0] || !document.body) {
+            window.setTimeout(()=>{window.alert("Hello")}, 5000);
+            return;
+        })()     
